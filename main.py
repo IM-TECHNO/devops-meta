@@ -1,5 +1,6 @@
 import re
 from flask import Flask, request
+import os
 
 app = Flask(__name__)
 
@@ -63,4 +64,4 @@ def say_hello():
         return 'Invalid name'
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=8081, debug=True)
+    app.run(host= os.getenv('IP',"0.0.0.0"), port=int(os.getenv('PORT',8080)))

@@ -16,6 +16,6 @@ RUN pip3 install -r /opt/devops-meta/requirements.txt
 
 WORKDIR /opt/devops-meta
 
-EXPOSE 8081
+EXPOSE 8080
 ENTRYPOINT [ "python3" ]
 CMD [ "main.py" ]
