@@ -60,6 +60,13 @@ To run tests, run the following command :
 ```
 
 
+## Roadmap
+
+- Additional browser support
+
+- Fully automate Jenkins deployment
+
+
 ## Authors
 
 - [@Pavithra Ragunathan (Trainer, Founder and Director of Metazord)](https://github.com/Pavithratrdev)
@@ -67,5 +74,11 @@ To run tests, run the following command :
 - [@Rahul(Student at Metazord)](https://www.github.com/IM-TECHNO)
 
 
+## Support
+
+For support, email raagulshiva@gmail.com .
+
+
+## House of Metazord
 ![Logo](https://i.ibb.co/DQzNLqR/Metazord-Logo.png)
 
