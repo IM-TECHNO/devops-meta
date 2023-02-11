@@ -1,14 +1,19 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+import os
+
+
 
 def setup():
+    current_dir = os.getcwd()
+    direc = os.path.join(current_dir, "chromedriver.exe")
     global driver
-    s = Service("C:\\chromedriver.exe")
+    s = Service(direc)
     driver = webdriver.Chrome(service=s)
     driver.maximize_window()
     driver.implicitly_wait(10)
-    driver.get("http://127.0.0.1:8081")
+    driver.get("http://127.0.0.1:5005")
 
 
 def valid_login():
