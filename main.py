@@ -46,8 +46,8 @@ def index():
         <center>
         <br><br><br><br><br><br><br><br><br><br>
         <form method="post">
-            <input type="text" name="name">
-            <input type="submit" value="Submit">
+            <input type="text" name="name" class="testcasefield">
+            <input type="submit" class="testcasebutton" value="Submit">
         </form>
         </center>
         </body>
@@ -59,9 +59,21 @@ def index():
 def say_hello():
     name = request.form['name']
     if re.fullmatch(r'^[a-zA-Z0-9]+$', name):
-        return f'Text entered =  {name}'
+        return '''
+        <html>
+        <body>
+        <p class="testcaseoutput">Valid_Login</p>
+        </body>
+        </html>
+        '''
     else:
-        return 'Invalid name'
+        return '''
+        <html>
+        <body>
+        <p class="testcaseoutput">Invalid_Login</p>
+        </body>
+        </html>
+        '''
 
 if __name__ == "__main__":
     app.run(host= os.getenv('IP',"0.0.0.0"), port=int(os.getenv('PORT',8081)))
