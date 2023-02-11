@@ -4,13 +4,11 @@ from selenium.webdriver.chrome.service import Service
 
 def setup():
     global driver
-    s = Service("C:\\Users\\Techno\\Downloads\\chromedriver_win32\\chromedriver.exe")
+    s = Service("C:\\chromedriver.exe")
     driver = webdriver.Chrome(service=s)
     driver.maximize_window()
     driver.implicitly_wait(10)
     driver.get("http://127.0.0.1:8081")
-
-
 
 
 def valid_login():
@@ -28,6 +26,8 @@ def valid_login():
         output.append(x.text)
     if (output == ['Valid_Login']):
         return y
+    else:
+        y = 6
 
 def browser_close():
     driver.quit()
