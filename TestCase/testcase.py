@@ -16,14 +16,14 @@ def setup():
 allure.step("Entering text`{username}` in textfield")
 def enter_textfield(username):
     setup()
-    driver.find_element(By.XPATH, "/html/body/center/form/input[1]").send_keys(username);    
+    driver.find_element(By.XPATH, "/html/body/center/center/form/input[1]").send_keys(username);    
 
 @allure.description("Validate with valid text")
 @allure.severity(severity_level="CRITICAL")
 def valid_login():
     setup()
     enter_textfield("hello")
-    driver.find_element(By.XPATH, "/html/body/center/form/input[2]").click()
+    driver.find_element(By.XPATH, "/html/body/center/center/form/input[2]").click()
     driver.implicitly_wait(5)
     global testcaseoutput_element
     global output
@@ -45,7 +45,7 @@ def valid_login():
 def invalid_login():
     setup()
     enter_textfield("@#$%")
-    driver.find_element(By.XPATH, "/html/body/center/form/input[2]").click()
+    driver.find_element(By.XPATH, "/html/body/center/center/form/input[2]").click()
     driver.implicitly_wait(5)
     global testcaseoutput_element
     global output
