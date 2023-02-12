@@ -56,7 +56,7 @@ To run tests, run the following command :
 
 ```bash
   cd TestCase
-  python testcase_run.py
+  python testcase.py
 ```
 
 
