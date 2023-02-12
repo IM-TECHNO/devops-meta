@@ -52,14 +52,20 @@ Run using docker run on port 5005 :
     
 ## Running Tests
 
+- Before running any tests, create a 'reports' directory in the 'TestCase' folder.
 To run tests, run the following command : 
 
 ```bash
   cd TestCase
-  python testcase.py
+  pytest -s -v main.py --disable-warnings --alluredir=reports
 ```
 
+After completion, you can now view the report using : 
 
+```bash
+  allure serve reports
+```
+NOTE : you may need to install [Allure Command Line Tool](https://github.com/allure-framework/allure2/releases) and add it to your path.
 ## Roadmap
 
 - Additional browser support
