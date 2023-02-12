@@ -57,7 +57,7 @@ To run tests, run the following command :
 
 ```bash
   cd TestCase
-  pytest -s -v main.py --disable-warnings --alluredir=reports
+  pytest -s -v testcase.py --disable-warnings --alluredir=reports
 ```
 
 After completion, you can now view the report using : 
