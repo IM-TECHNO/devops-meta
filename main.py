@@ -8,15 +8,16 @@ app = Flask(__name__)
 def index():
     return '''
         <html>
-        <span>House of Metazord</span>
+        <!--<span>House of Metazord</span>-->
         <body>
+        <center><img src="https://i.ibb.co/DQzNLqR/Metazord-Logo.png" alt="Metazord-Logo" border="0" width="300" height="252"></cemter>
 
         
         <style>
         
-            body {background-color: #f0f0f0;}
+            body {background-color: #ffffff;}
             input[type=text] {width: 300px; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;}
-            input[type=submit] {width: 100px; background-color: #ffd700; color: white; padding: 14px 20px; margin: 8px 0; border: none; border-radius: 4px; cursor: pointer; font-color: black;}
+            input[type=submit] {width: 100px; background-color: #f79204; color: white; padding: 14px 20px; margin: 8px 0; border: none; border-radius: 4px; cursor: pointer; font-color: black;}
             input[type=submit]:hover {background-color: #45a049;}
 
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -44,7 +45,7 @@ def index():
 
         </style>
         <center>
-        <br><br><br><br><br><br><br><br><br><br>
+        <!--<br><br><br><br><br><br><br><br><br><br>-->
         <form method="post">
             <input type="text" name="name" class="testcasefield">
             <input type="submit" class="testcasebutton" value="Submit">
