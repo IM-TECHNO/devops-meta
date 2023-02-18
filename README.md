@@ -65,6 +65,22 @@ After completion, you can now view the report using :
   allure serve reports
 ```
 NOTE : you may need to install [Allure Command Line Tool](https://github.com/allure-framework/allure2/releases) and add it to your path.
+
+## Setting up Jenkins
+
+- Create a new Free-Style project with a title. 
+- In the General>Advanced, enable 'Use custom workspace' and enter the project directory
+- In Build steps, select 'Execute a Windows batch command and enter the commands given below'
+
+```bash
+  call .\venv\Scripts\activate.bat
+  pytest -s -v --disable-warnings --alluredir=reports TestCase\testcase.py
+```
+
+- Select 'Post-build actions and select 'Allure Report'
+- In the path field, enter 'reports'
+-Click apply and you're done.
+
 ## Roadmap
 
 - Additional browser support
