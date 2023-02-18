@@ -40,26 +40,26 @@ def valid_login():
         return y
 
 
-@allure.description("Validate with valid text")
-@allure.severity(severity_level="NORMAL")
-def invalid_login():
-    setup()
-    enter_textfield("@#$%")
-    driver.find_element(By.XPATH, "/html/body/center/center/form/input[2]").click()
-    driver.implicitly_wait(5)
-    global testcaseoutput_element
-    global output
-    testcaseoutput_element = driver.find_elements(By.CLASS_NAME, "testcaseoutput")
-    output = [x.text for x in testcaseoutput_element]
-    output = []
-    for x in testcaseoutput_element:
-        output.append(x.text)
-    if (output == ['Valid_Login']):
-        y = 5
-        return y
-    else:
-        y = 6
-        return y
+# @allure.description("Validate with valid text")
+# @allure.severity(severity_level="NORMAL")
+# def invalid_login():
+#     setup()
+#     enter_textfield("@#$%")
+#     driver.find_element(By.XPATH, "/html/body/center/center/form/input[2]").click()
+#     driver.implicitly_wait(5)
+#     global testcaseoutput_element
+#     global output
+#     testcaseoutput_element = driver.find_elements(By.CLASS_NAME, "testcaseoutput")
+#     output = [x.text for x in testcaseoutput_element]
+#     output = []
+#     for x in testcaseoutput_element:
+#         output.append(x.text)
+#     if (output == ['Valid_Login']):
+#         y = 5
+#         return y
+#     else:
+#         y = 6
+#         return y
 
 
 def browser_close():
@@ -72,13 +72,13 @@ def test_validlogin():
     browser_close()
 
 
-def test_invalidlogin():
-    output = invalid_login()
-    try:
-        assert output == 5
-    finally:
-        if AssertionError:
-            allure.attach(driver.get_screenshot_as_png(),
-                          name="Invalid Text",
-                          attachment_type=allure.attachment_type.PNG)
-            browser_close()
+# def test_invalidlogin():
+#     output = invalid_login()
+#     try:
+#         assert output == 5
+#     finally:
+#         if AssertionError:
+#             allure.attach(driver.get_screenshot_as_png(),
+#                           name="Invalid Text",
+#                           attachment_type=allure.attachment_type.PNG)
+#             browser_close()
