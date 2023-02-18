@@ -79,7 +79,7 @@ NOTE : you may need to install [Allure Command Line Tool](https://github.com/all
 
 - Select 'Post-build actions and select 'Allure Report'
 - In the path field, enter 'reports'
--Click apply and you're done.
+- Click apply and you're done.
 
 ## Roadmap
 
