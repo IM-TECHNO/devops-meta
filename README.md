@@ -104,5 +104,5 @@ For support, email raagulshiva@gmail.com .
 
 
 ## House of Metazord
-![Logo](https://i.ibb.co/DQzNLqR/Metazord-Logo.png)
+<![Logo](https://i.ibb.co/DQzNLqR/Metazord-Logo.png)>
 
