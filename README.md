@@ -98,11 +98,6 @@ NOTE : you may need to install [Allure Command Line Tool](https://github.com/all
 - [@Rahul(Student at Metazord)](https://www.github.com/IM-TECHNO)
 
 
-## Support
-
-For support, email raagulshiva@gmail.com .
-
-
-## House of Metazord
-<![Logo](https://i.ibb.co/DQzNLqR/Metazord-Logo.png)>
+<!---## House of Metazord
+![Logo](https://i.ibb.co/DQzNLqR/Metazord-Logo.png)--->
 
