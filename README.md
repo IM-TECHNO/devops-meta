@@ -1,7 +1,7 @@
 
 # Devops-Metazord-Dockerize
 
-This project is currently in development and is only for educational purposes. Anyone including students/staffs outside of Metazord can use this as their first DevOps project. Happy Coding ! 
+This project is currently in development and is only for educational purposes. Happy Coding ! 
 
 Warning : This project is still WIP !!!
 
